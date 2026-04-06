@@ -1,0 +1,11 @@
+{
+  "printWidth": 100,
+  "semi": true,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": ["^react$", "^next", "^[./]", "^[a-zA-Z]"],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true,
+  "tailwindFunctions": ["cn"]
+}
