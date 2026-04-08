@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
+export const myDomain = "https://yang-dev.vercel.app";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL(myDomain),
 
   title: {
     default: "Sheng-Lin Yang | Software Developer",
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     "Full-stack developer specializing in Next.js, React, and modern web technologies. Explore my portfolio and projects.",
 
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: "/",
   },
 
   keywords: [
@@ -68,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sheng-Lin Yang | Full Stack Developer",
     description: "Explore Yang's portfolio, projects, and full-stack development skills.",
-    url: "https://your-domain.com",
+    url: `${myDomain}`,
     siteName: "Yang Portfolio",
     // images: [
     //   {
@@ -106,10 +108,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Sheng-Lin Yang",
-              url: "https://your-domain.com",
-              // image: "https://your-domain.com/avatar.png",
+              url: `${myDomain}`,
+              // image: `${myDomain}/avatar.png`,
               sameAs: ["https://github.com/slyang08", "https://www.linkedin.com/in/slyang08/"],
-              "@id": "https://your-domain.com/#person",
+              "@id": `${myDomain}/#person`,
               jobTitle: "Full Stack Developer",
               knowsAbout: [
                 "Next.js",

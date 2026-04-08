@@ -1,5 +1,6 @@
 // src/app/robots.ts
 import { MetadataRoute } from "next";
+import { myDomain } from "./layout";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://your-domain.com/sitemap.xml",
+    sitemap: `${myDomain}/sitemap.xml`,
   };
 }
