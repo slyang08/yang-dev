@@ -1,3 +1,4 @@
+import Footer from "@/components/ui/footer/footer";
 import Header from "@/components/ui/header/header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -130,6 +131,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <Footer />
       </body>
     </html>
   );
