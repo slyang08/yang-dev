@@ -6,7 +6,7 @@ export default function Header() {
     <header className="bg-background/80 sticky top-0 z-50 border-b backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between p-4">
         <Link href="/" className="text-lg font-bold">
-          Yang
+          Sheng-Lin Yang
         </Link>
 
         {/* desktop */}
