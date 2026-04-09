@@ -1,7 +1,7 @@
-// src/components/ui/footer/footer.tsx
+// src/components/ui/footer/Footer.tsx
 import Link from "next/link";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="border-t py-10">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 md:flex-row md:justify-between">

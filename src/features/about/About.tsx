@@ -1,9 +1,9 @@
-// src/app/features/about/About.tsx
+// src/features/about/About.tsx
 import Link from "next/link";
 
-export default function About() {
+export function About() {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-20">
+    <>
       <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
         Sheng-Lin Yang — Full Stack Developer
       </h1>
@@ -23,6 +23,6 @@ export default function About() {
           LinkedIn
         </Link>
       </div>
-    </section>
+    </>
   );
 }
