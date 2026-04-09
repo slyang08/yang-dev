@@ -1,7 +1,7 @@
-// src/components/ui/header/header.tsx
+// src/components/ui/header/Header.tsx
 import Link from "next/link";
 
-export default function Header() {
+export function Header() {
   return (
     <header className="bg-background/80 sticky top-0 z-50 border-b backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between p-4">

@@ -1,5 +1,5 @@
-import Footer from "@/components/ui/footer/footer";
-import Header from "@/components/ui/header/header";
+import { Footer } from "@/components/ui/footer";
+import { Header } from "@/components/ui/header";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
