@@ -101,9 +101,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-screen flex-col">
         <Header />
-        {children}
+        <main className="flex-1">{children}</main>
 
         <Script
           id="person-jsonld"
@@ -120,12 +120,12 @@ export default function RootLayout({
               "@id": `${myDomain}/#person`,
               jobTitle: "Full Stack Developer",
               knowsAbout: [
-                "Next.js",
-                "React",
                 "TypeScript",
                 "Node.js",
                 "Express.js",
                 "Express",
+                "React",
+                "Next.js",
                 "Backend Development",
               ],
             }),
