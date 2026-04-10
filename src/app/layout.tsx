@@ -1,3 +1,4 @@
+import { BackToTop } from "@/components/ui/back-to-top";
 import { Footer } from "@/components/ui/footer";
 import { Header } from "@/components/ui/header";
 import type { Metadata } from "next";
@@ -131,6 +132,8 @@ export default function RootLayout({
             }),
           }}
         />
+
+        <BackToTop />
         <Footer />
       </body>
     </html>
