@@ -1,15 +1,16 @@
 // src/features/projects/Projects.tsx
+import { ProjectCard } from "./ProjectCard";
+import { projects } from "./projects.data";
 
 export function Projects() {
   return (
     <>
       <h1 className="text-5xl">Projects</h1>
 
-      <div className="mt-6 grid gap-6 md:grid-cols-2">
-        <div className="rounded-lg border p-4">
-          <h3 className="font-medium">Project Name</h3>
-          <p className="text-muted-foreground mt-2 text-sm">Short description of what it does.</p>
-        </div>
+      <div className="mt-6 flex flex-col gap-6">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} {...project} />
+        ))}
       </div>
     </>
   );
