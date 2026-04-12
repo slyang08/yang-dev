@@ -23,12 +23,12 @@ export function ProjectCard({ name, description, image, github, demo, tags }: Pr
 
       <div className="mt-4 flex gap-4 text-sm">
         {github && (
-          <a href={github} target="_blank" className="underline">
+          <a href={github} target="_blank" rel="noopener noreferrer" className="underline">
             GitHub
           </a>
         )}
         {demo && (
-          <a href={demo} target="_blank" className="underline">
+          <a href={demo} target="_blank" rel="noopener noreferrer" className="underline">
             Live Demo
           </a>
         )}
