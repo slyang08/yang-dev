@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "Built this project with Node.js (Express), Next.js, and PostgreSQL for a Malaysian durian retailer",
     // image: "/projects/portfolio.png",
     github: "https://github.com/slyang08/LiuShuShu",
-    demo: "https://liushushu.onrender.com",
+    demo: "https://liushushu.vercel.app",
     tags: ["TypeScript", "Node.js", "Express", "Next.js", "PostgreSQL", "Tailwind CSS"],
   },
   {
