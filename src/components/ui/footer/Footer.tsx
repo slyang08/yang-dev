@@ -1,5 +1,4 @@
 // src/components/ui/footer/Footer.tsx
-import Link from "next/link";
 
 export function Footer() {
   return (
@@ -11,9 +10,15 @@ export function Footer() {
         </div>
 
         <div className="flex gap-4">
-          <Link href="mailto:slyang8008@gmail.com">Email</Link>
-          <Link href="https://github.com/slyang08">GitHub</Link>
-          <Link href="https://linkedin.com/in/slyang08">LinkedIn</Link>
+          <a className="text-sm hover:underline" href="mailto:slyang8008@gmail.com">
+            Email
+          </a>
+          <a className="text-sm hover:underline" href="https://github.com/slyang08">
+            GitHub
+          </a>
+          <a className="text-sm hover:underline" href="https://linkedin.com/in/slyang08">
+            LinkedIn
+          </a>
         </div>
       </div>
     </footer>

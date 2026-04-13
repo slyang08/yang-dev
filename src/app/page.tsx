@@ -1,5 +1,6 @@
 // src/app/page.tsx
 import { About } from "@/features/about";
+import { Contact } from "@/features/contact";
 import { Hero } from "@/features/hero";
 import { OpenSource } from "@/features/open-source";
 import { Projects } from "@/features/projects";
@@ -18,6 +19,9 @@ export default function Home() {
       </section>
       <section id="projects" className="mb-20 max-w-5xl px-4">
         <Projects />
+      </section>
+      <section id="contact" className="mb-20 max-w-5xl px-4">
+        <Contact />
       </section>
     </>
   );
