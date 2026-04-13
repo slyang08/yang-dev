@@ -7,6 +7,7 @@ export type Project = {
   image?: string;
   github: string;
   demo?: string;
+  highlights?: string[];
   tags?: string[];
 };
 
@@ -24,9 +25,15 @@ export const projects: Project[] = [
   {
     id: "fintrackeasy",
     name: "FinTrackEasy",
-    description:
-      "FinTrackEasy is a user-friendly personal finance tracking application that helps users manage their daily income and expenses.",
+    description: `Built a full-stack personal finance tracking system with Node.js, Express, and MongoDB.
+                  Implemented CRUD operations, data persistence, and responsive UI with React.
+                  Focused on improving user experience and efficient data management.`,
     github: "https://github.com/Project-Implementation-PRJ666/FinTrackEasy",
+    highlights: [
+      "Implemented JWT authentication",
+      "Designed relational database schema",
+      "Optimized API performance",
+    ],
     tags: ["JavaScript", "Node.js", "Express", "React", "MongoDB", "Tailwind CSS"],
   },
 ];
