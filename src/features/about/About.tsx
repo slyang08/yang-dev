@@ -11,8 +11,11 @@ export function About() {
         </p>
 
         <p className="text-muted-foreground">
-          I have experience building RESTful APIs, designing database schemas, and developing
-          scalable web applications using Node.js, Express, and PostgreSQL.
+          Designed and implemented RESTful APIs with Node.js, Express, and PostgreSQL, handling
+          authentication, database design, and performance optimization.
+        </p>
+        <p className="text-muted-foreground">
+          Improved API response performance and ensured scalable backend architecture.
         </p>
 
         <p className="text-muted-foreground">

@@ -4,7 +4,7 @@ import type { Project } from "./projects.data";
 
 export function ProjectCard({ name, description, image, github, demo, tags }: Project) {
   return (
-    <div className="rounded-xl border p-4 transition hover:shadow-lg">
+    <div className="rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       {image && <Image src={image} alt={name} className="mb-3 rounded-md" />}
 
       <h3 className="text-lg font-semibold">{name}</h3>
