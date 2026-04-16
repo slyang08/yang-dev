@@ -38,12 +38,12 @@ export function About() {
         <Link href="#projects" className="underline">
           View Projects
         </Link>
-        <Link href="https://github.com/slyang08" className="underline">
+        <a href="https://github.com/slyang08" className="underline">
           GitHub
-        </Link>
-        <Link href="https://www.linkedin.com/in/slyang08/" className="underline">
+        </a>
+        <a href="https://www.linkedin.com/in/slyang08/" className="underline">
           LinkedIn
-        </Link>
+        </a>
       </div>
     </>
   );
