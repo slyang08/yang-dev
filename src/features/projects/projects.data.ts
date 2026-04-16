@@ -1,30 +1,33 @@
 // src/features/projects/projects.data.ts
 
+type ImageConfig = {
+  src: string;
+  alt: string;
+  aspectRatio?: "phone" | "laptop";
+  fit?: "cover" | "contain";
+};
+
 export type Project = {
   id: string;
   name: string;
   description: string;
-  image?: {
-    name: string;
-    src: string;
-    alt: string;
-  };
+  image?: ImageConfig;
   github: string;
   demo?: string;
-  highlights?: string[];
   tags?: string[];
+  highlights?: string[];
 };
 
 export const projects: Project[] = [
   {
     id: "liushushu",
     name: "LiuShuShu",
-    description:
-      "Built this project with Node.js (Express), Next.js, and PostgreSQL for a Malaysian durian retailer",
+    description: `Built this project for a Malaysian durian retailer with Node.js, Express, Next.js,
+                  and PostgreSQL for a Malaysian durian retailer`,
     image: {
-      name: "LiuShuShu phone Demo",
-      src: "/lss-demo-phone.png",
+      src: "/lss-demo-laptop.png",
       alt: "LiuShuShu Demo",
+      aspectRatio: "phone",
     },
     github: "https://github.com/slyang08/LiuShuShu",
     demo: "https://liushushu.vercel.app",
@@ -37,9 +40,9 @@ export const projects: Project[] = [
                   Implemented CRUD operations, data persistence, and responsive UI with React.
                   Focused on improving user experience and efficient data management.`,
     image: {
-      name: "FinTrackEasy laptop Demo",
       src: "/fte-demo-laptop.png",
       alt: "FinTrackEasy Demo",
+      aspectRatio: "laptop",
     },
     github: "https://github.com/Project-Implementation-PRJ666/FinTrackEasy",
     demo: "https://fintrackeasy.vercel.app/",
