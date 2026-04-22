@@ -22,8 +22,11 @@ export const projects: Project[] = [
   {
     id: "liushushu",
     name: "LiuShuShu",
-    description: `Built this project for a Malaysian durian retailer with Node.js, Express, Next.js,
-                  and PostgreSQL for a Malaysian durian retailer`,
+    description: `Built a backend-driven inventory management system for a Malaysian durian
+                  retailer, implementing authentication (login/logout/password management), daily
+                  stock tracking, and CRUD operations for products and inventory data.
+                  The frontend serves as a lightweight interface for displaying shop information,
+                  location, and current stock levels.`,
     image: {
       src: "/lss-demo-laptop.png",
       alt: "LiuShuShu Demo",
@@ -31,14 +34,14 @@ export const projects: Project[] = [
     },
     github: "https://github.com/slyang08/LiuShuShu",
     demo: "https://liushushu.vercel.app",
+    highlights: [],
     tags: ["TypeScript", "Node.js", "Express", "Next.js", "PostgreSQL", "Tailwind CSS"],
   },
   {
     id: "fintrackeasy",
     name: "FinTrackEasy",
-    description: `Built a full-stack personal finance tracking system with Node.js, Express, and MongoDB.
-                  Implemented CRUD operations, data persistence, and responsive UI with React.
-                  Focused on improving user experience and efficient data management.`,
+    description: `Built a multi-user finance tracking system with JWT authentication,
+                  RESTful API architecture, and MongoDB-based transaction persistence.`,
     image: {
       src: "/fte-demo-laptop.png",
       alt: "FinTrackEasy Demo",
@@ -47,9 +50,10 @@ export const projects: Project[] = [
     github: "https://github.com/Project-Implementation-PRJ666/FinTrackEasy",
     demo: "https://fintrackeasy.vercel.app/",
     highlights: [
-      "Implemented JWT authentication",
-      "Designed relational database schema",
-      "Optimized API performance",
+      "Designed authentication system (JWT-based)",
+      "Built RESTful API architecture",
+      "Structured database schema for financial data",
+      "Optimized API response structure",
     ],
     tags: ["JavaScript", "Node.js", "Express", "React", "MongoDB", "Tailwind CSS"],
   },

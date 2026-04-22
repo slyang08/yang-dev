@@ -6,17 +6,28 @@ export function Footer() {
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 md:flex-row md:justify-between">
         <div>
           <p className="font-semibold">Sheng-Lin Yang</p>
-          <p className="text-muted-foreground text-sm">Software Developer | Full Stack Developer</p>
+          <p className="text-muted-foreground text-sm">
+            Backend-focused Full Stack Developer | Node.js | PostgreSQL | System Design
+          </p>
         </div>
 
         <div className="flex gap-4">
-          <a className="text-sm hover:underline" href="mailto:slyang8008@gmail.com">
+          <a
+            className="text-sm underline-offset-4 hover:underline"
+            href="mailto:slyang8008@gmail.com"
+          >
             Email
           </a>
-          <a className="text-sm hover:underline" href="https://github.com/slyang08">
+          <a
+            className="text-sm underline-offset-4 hover:underline"
+            href="https://github.com/slyang08"
+          >
             GitHub
           </a>
-          <a className="text-sm hover:underline" href="https://linkedin.com/in/slyang08">
+          <a
+            className="text-sm underline-offset-4 hover:underline"
+            href="https://linkedin.com/in/slyang08"
+          >
             LinkedIn
           </a>
         </div>
