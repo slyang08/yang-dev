@@ -45,8 +45,8 @@ export const openSources: OpenSource[] = [
     project: "bifrost",
     type: ContributionType.FEATURE,
     title: "Option to disable a key without deleting it.",
-    contribution: `designed and implemented a non-destructive key state management mechanism to support
-                  disabling keys without deletion`,
+    contribution: `Enabled disabling API keys without deletion, introducing a reversible key state
+                   system that improves lifecycle safety.`,
     impact: `improving API key lifecycle safety and enabling reversible operations without data loss`,
     tags: ["Go", "Backend", "Next.js", "Transports (HTTP)"],
     links: {
@@ -60,9 +60,10 @@ export const openSources: OpenSource[] = [
     project: "pyscn",
     type: ContributionType.FEATURE,
     title: "Add circular dependency detection to check command.",
-    contribution: `implemented text-based static analysis to detect circular dependencies in Python modules`,
+    contribution: `Implemented circular dependency detection in Python static analysis tool,
+                   helping detect architectural issues early in codebases.`,
     impact: `helping developers identify architectural flaws early and prevent tightly coupled code structures`,
-    tags: ["Go", "CLI", "Command Line Interface"],
+    tags: ["Go", "Command Line Interface"],
     links: {
       github: "https://github.com/ludo-technologies/pyscn",
       prLink: "https://github.com/ludo-technologies/pyscn/pull/213",
@@ -74,10 +75,10 @@ export const openSources: OpenSource[] = [
     project: "commit-msg",
     type: ContributionType.BUG_FIX,
     title: "Potential Race Condition in Concurrent API Calls.",
-    contribution: `identified and resolved a race condition in concurrent API calls using
-                  synchronization control`,
+    contribution: `Fixed race condition in concurrent API calls by introducing synchronization
+                   control, ensuring consistent commit message generation.`,
     impact: `ensuring deterministic and reliable commit message generation under concurrent execution`,
-    tags: ["Go", "CLI", "Command Line Interface"],
+    tags: ["Go", "CLI"],
     links: {
       github: "https://github.com/DFanso/commit-msg",
       prLink: "https://github.com/DFanso/commit-msg/pull/126",

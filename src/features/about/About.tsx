@@ -7,30 +7,27 @@ export function About() {
       <div className="space-y-4">
         <h1 className="text-5xl">About</h1>
         <p>
-          I am a full-stack developer with a strong focus on backend development and system design.
+          I am a full-stack developer with a strong focus on backend systems, API design, and
+          scalable architecture.
         </p>
 
         <p className="text-muted-foreground">
-          Designed and implemented RESTful APIs with Node.js, Express, and PostgreSQL, handling
-          authentication, database design, and performance optimization.
+          I have designed and built RESTful APIs using Node.js and PostgreSQL, including
+          authentication systems, database schema design, and performance optimization.
         </p>
         <p className="text-muted-foreground">
-          Improved API response performance and ensured scalable backend architecture.
-        </p>
-
-        <p className="text-muted-foreground">
-          On the frontend, I work with React and Next.js to create clean and responsive user
-          interfaces that integrate seamlessly with backend systems.
+          In production environments, I have worked with Docker for containerization, GitHub Actions
+          for CI/CD automation, and deployed applications using platforms such as Vercel.
         </p>
 
         <p className="text-muted-foreground">
-          I enjoy solving complex problems, improving system performance, and building reliable
-          applications.
+          On the frontend, I use React and Next.js to build clean and responsive interfaces that
+          integrate with backend services.
         </p>
 
         <p className="text-muted-foreground">
-          Currently, I am seeking opportunities as a full-stack developer with a focus on backend
-          engineering.
+          I enjoy solving complex problems, designing systems, improving backend performance, and
+          building reliable, production-ready applications.
         </p>
       </div>
 
