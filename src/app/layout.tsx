@@ -1,9 +1,9 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
+import type { Metadata } from "next";
 import { BackToTop } from "@/components/ui/back-to-top";
 import { Footer } from "@/components/ui/footer";
 import { Header } from "@/components/ui/header";
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 export const myDomain = "https://yang-dev.vercel.app";

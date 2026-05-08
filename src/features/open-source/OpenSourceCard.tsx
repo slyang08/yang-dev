@@ -1,6 +1,6 @@
 // src/features/open-source/OpenSourceCard.tsx
-import { type OpenSource, capitalize } from "./openSource.data";
 import { SquareArrowOutUpRight } from "lucide-react";
+import { type OpenSource, capitalize } from "./openSource.data";
 
 const typeStyle: Record<OpenSource["type"], { label: string; className: string }> = {
   FEATURE: {
