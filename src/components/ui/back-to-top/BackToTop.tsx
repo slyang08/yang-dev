@@ -1,9 +1,9 @@
 // src/components/ui/back-to-top/BackToTop.tsx
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { ArrowUpToLine } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function BackToTop() {
   const [show, setShow] = useState(false);

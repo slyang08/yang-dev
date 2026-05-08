@@ -1,6 +1,6 @@
 // src/features/open-source/OpenSource.tsx
-import { OpenSourceCard } from "./OpenSourceCard";
 import { openSources } from "./openSource.data";
+import { OpenSourceCard } from "./OpenSourceCard";
 
 export function OpenSource() {
   return (

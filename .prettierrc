@@ -3,9 +3,6 @@
   "semi": true,
   "singleQuote": false,
   "trailingComma": "es5",
-  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
-  "importOrder": ["^react$", "^next", "^[./]", "^[a-zA-Z]"],
-  "importOrderSeparation": false,
-  "importOrderSortSpecifiers": true,
+  "plugins": ["prettier-plugin-tailwindcss"],
   "tailwindFunctions": ["cn"]
 }
