@@ -1,8 +1,9 @@
 // src/features/projects/ProjectCard.tsx
 import Image from "next/image";
+import Link from "next/link";
 import type { Project } from "./projects.data";
 
-export function ProjectCard({ name, description, image, github, demo, tags }: Project) {
+export function ProjectCard({ id, name, description, image, github, demo, tags }: Project) {
   return (
     <>
       <div className="group bg-background flex overflow-hidden rounded-xl border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -12,12 +13,15 @@ export function ProjectCard({ name, description, image, github, demo, tags }: Pr
               src={image.src}
               alt={image.alt}
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="rounded-md object-cover transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             />
           )}
         </div>
         <div className="flex flex-1 flex-col px-4">
-          <h3 className="text-lg font-semibold tracking-tight">{name}</h3>
+          <h3 className="text-lg font-semibold tracking-tight">
+            <Link href={`/projects/${id}`}>{name}</Link>
+          </h3>
 
           <p className="text-muted-foreground mt-2 text-sm leading-relaxed">{description}</p>
 
