@@ -16,6 +16,8 @@ export type Project = {
   demo?: string;
   tags?: string[];
   highlights?: string[];
+
+  priority?: boolean;
 };
 
 export const projects: Project[] = [
