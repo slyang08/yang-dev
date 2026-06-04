@@ -37,10 +37,25 @@ export const projects: Project[] = [
     demo: "https://kindaseen.vercel.app",
     tags: ["Python", "FastAPI", "TypeScript", "Next.js", "Supabase", "Docker", "GitHub Actions"],
     highlights: [
-      "Designed a secure server-side proxy architecture via FastAPI to query TMDB API, preventing client-side API key exposure.",
-      "Engineered a persistent database schema using Supabase/PostgreSQL to cache metadata (overviews, genres), laying the groundwork for future AI recommendation embeddings.",
-      "Optimized UX resilience by developing an advanced search dialog component that preserves intermediate input states upon accidental dismissal.",
-      "Established an automated CI/CD pipeline leveraging GitHub Actions and Docker for consistent multi-stage builds and automated linting.",
+      `Built a full-stack media tracking app supporting movies, dramas, anime, and manga, with
+        complete CRUD, soft delete, and Supabase-based user authentication (register / login / logout).`,
+      `Designed a secure server-side FastAPI proxy for the TMDB API, preventing client-side
+       token exposure and centralizing metadata fetching (posters, genres, overviews) for future caching.`,
+      `Implemented a Favorites & Sharing system with public profile pages (/u/username)
+       and private token-based share links (/share/p/token), backed by a dedicated favorites
+        table designed for future social features.`,
+      `Engineered optimistic UI with TanStack Query for instant feedback on mutations,
+       with automatic cache rollback on API failure, eliminating full-page refreshes on user interactions.`,
+      `Built a Statistics dashboard visualizing watching habits (media type breakdown, activity trends)
+       using Recharts, with client-side aggregation over user record data.`,
+      `Engineered a PostgreSQL schema via Supabase, with server-side JWT verification
+       (ES256 / JWKS via PyJWT + TTLCache) and Alembic-managed migrations, laying the groundwork
+        for future OpenAI embedding-based recommendations.`,
+      `Established a CI/CD pipeline with GitHub Actions and Docker for automated linting,
+       multi-stage builds, and deployment to Render (backend) and Vercel (frontend).`,
+      `Engineered a PostgreSQL schema via Supabase with server-side JWT verification (ES256 / JWKS via PyJWT + TTLCache)
+       and Alembic-managed migrations; integrated a Supabase Webhook to automatically sync new
+        Auth users into a user_profiles table on registration, decoupling identity management from application data.`,
     ],
   },
   {
